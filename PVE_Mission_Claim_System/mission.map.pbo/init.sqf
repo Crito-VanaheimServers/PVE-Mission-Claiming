@@ -1,0 +1,1 @@
+[] execVM "custom\DMS_Mission_Claim\DMS_Mission_Claim_Init.sqf";

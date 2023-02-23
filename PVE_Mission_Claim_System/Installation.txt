@@ -1,0 +1,43 @@
+
+1. Unpbo your mission.map.pbo 
+	if you do not have a custom folder copy the custom folder and paste it into you mission.map.pbo
+	if you do have a custom folder than copy the DMS_Mission_Claim folder into your custom folder
+  
+2. In your config.cpp you need to find: class CfgXM8 
+	here you need to create the xm8 button for claiming missions.
+	in this package is a file called config.cpp with
+	the provided iformation for your button.
+	
+3. Copy the contents of description.ext provided in this package
+	into your description.ext
+	
+4. Copy the contents of init.sqf into your init.sqf
+	if you do not have an init.sqf than copy the 
+	entire init.sqf file into your mission.map.pbo
+
+5. Go into the  DMS_Mission_Claim folder you placed in the custom folder and 
+	edit the config.sqf settings to your liking. This system was made for
+	DMS mission but ended up growing into more. Most common mission systems like 
+	DMS, VMF, Shipwrecks, are already built into it and you can add marker types
+	in config.sqf to add other missions systems to it. 
+
+I run my mode and jip in for CfgRemoteExec like the following
+so if there are any issues with the problem may be here and is up
+to you to run like this or figure out the functions to add.
+
+class CfgRemoteExec
+{
+	class Functions
+	{
+		mode = 2;
+		jip = 1;
+		class fnc_AdminReq { allowedTargets=2; };	// infiSTAR AntiHack
+		class fn_xm8apps_server { allowedTargets=2; };	// infiSTAR xm8apps
+		class ExileServer_system_network_dispatchIncomingMessage { allowedTargets=2; };	// ExileMod
+	};
+	class Commands
+	{
+		mode=2;
+		jip=1;
+	};
+};
