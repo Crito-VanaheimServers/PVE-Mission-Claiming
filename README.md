@@ -1,2 +1,2 @@
 # PVE-Mission-Claiming
-Adds xm8 button for claiming missions. This will not work with DMS marker count for AI turned on
+Adds xm8 button for claiming missions for PVE Servers. This will not work with DMS marker count for AI turned on. Players can only claim 1 mission at a time. Server owners can set a speed, altitude, and distance that player has to meet before being able to claim a mission. Right side of app is list of available missions with claim button at bottom. Middle is a map showing the mission locations, Left side is where claimed missions are stored with unclaim button on bottom. Player can only unclaim mission he or she claimed. 
