@@ -57,7 +57,10 @@ v1.0 10/02/2022
 	format ["%1", _MarkerTextChanged] remoteExecCall ["systemChat",0];			/// sends claim message to all players
 	format ["%1", _MarkerTextChanged] remoteExecCall ["globalChat",0];			/// sends claim message to all players
 
-	missionclaim = [_MarkerTextChanged];
-	publicVariableServer "missionclaim";
-
+	if(LogClaims)then
+	{
+		missionclaim = [_MarkerTextChanged];
+		publicVariableServer "missionclaim";
+	};
+	
 	true

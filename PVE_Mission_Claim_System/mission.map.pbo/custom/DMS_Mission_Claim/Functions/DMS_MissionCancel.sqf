@@ -51,9 +51,12 @@ v1.0 10/02/2022
 
 	["MissonClaims",_MarkerTextCancel] call FNC_A3_CUSTOMLOG;		
 	
-	missionclaim = [_MarkerTextCancel];
-	publicVariableServer "missionclaim";
-
+	if(LogClaims)then
+	{
+		missionclaim = [_MarkerTextCancel];
+		publicVariableServer "missionclaim";
+	};
+	
 	DMS_CancelSelectedMissionMarkerName = "";		/// resets the cancel marker variable
 	true
 	
