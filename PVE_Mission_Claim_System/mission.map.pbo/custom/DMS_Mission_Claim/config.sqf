@@ -24,6 +24,8 @@ the mission name to read "MissionName Claimed By PlayerName". When they claim a 
 is put into a box for player to unclaim if necessary. Once an ai dies at mission DMS then changes the
 mission name to update the AI count at this point the player claim on marker is no longer there.
 */
+LogClaims = false; 							//If you use infistar set this to true for logging of claimed and unclaimed missions
+											//to the infistar log folder.
 
 Use_MissionClaimDistanceCheck = true;		// turns on/off distance checks from mission
 MissionClaimDistanceCheck = 2000;			// max distance a player can be from a mission to claim it
