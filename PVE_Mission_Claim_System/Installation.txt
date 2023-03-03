@@ -21,6 +21,9 @@
 	DMS, VMF, Shipwrecks, are already built into it and you can add marker types
 	in config.sqf to add other missions systems to it. 
 
+Optional: 	If you use infistar and want to have logs generated for claimed and unclaimed missions than paste in
+			the missionclaim.pbo into @ExileServer\addons folder. Make sure to have LogClaims set to true in config from step 5.
+
 I run my mode and jip in for CfgRemoteExec like the following
 so if there are any issues with the problem may be here and is up
 to you to run like this or figure out the functions to add.
